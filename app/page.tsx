@@ -5,6 +5,6 @@ import Grid from "@rudra-comp/ui/Grid";
 export default function Home() {
   return <>
     <Hero/>
-    <Grid></Grid>
+    <Grid/>
   </>
 }

@@ -90,7 +90,7 @@
     @apply relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5;
   }
   .rudra-container{
-    @apply max-w-7xl w-full h-screen;
+    @apply max-w-7xl w-full;
   }
   .bg-grid{
     @apply h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.02] absolute top-0 left-0 flex items-center justify-center;

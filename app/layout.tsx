@@ -29,9 +29,9 @@ export default function RootLayout({
         >
           <main className="rudra-content">
             <div className="rudra-container">
-              <FloatingNav navItems={[
+              {/* <FloatingNav navItems={[
                   {name: 'Home', link: '/', icon: <FaHome/>}
-                ]} />
+                ]} /> */}
               {children}
             </div>
           </main>
