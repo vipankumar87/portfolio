@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "@rudra-app/globals.css";
 import Config from "@rudra/config";
 import { ThemeProvider } from "@rudra-comp/theme-provider";
-import { FloatingNav } from "./components/ui/FloatingNav";
-import { FaHome } from "react-icons/fa";
 
 
 export const metadata: Metadata = {

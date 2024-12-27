@@ -8,7 +8,7 @@ const MagicButton = ({title, icon, position, handleClick, otherClasses}: {
     otherClasses?: string;
 }) => {
   return (
-    <button className={`magic-button ${otherClasses}`}>
+    <button onClick={handleClick} className={`magic-button ${otherClasses}`}>
         {position === 'left' && icon}
         {title}
         {position === 'right' && icon}
