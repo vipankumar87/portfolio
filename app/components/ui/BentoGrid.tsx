@@ -1,5 +1,6 @@
 import { cn } from "@rudra/lib/utils";
 import { BackgroundGradientAnimation } from "../background-gradient-animation";
+import GlobeComponent from "./Glob";
 
 export const BentoGrid = ({
   className,
@@ -42,12 +43,12 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-transparent group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-transparent group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p- pt-0 dark:bg-black dark:border-white/[0.2] justify-between flex flex-col space-y-4",
         className
       )}
       style={{
         background: 'rgb(4,7,29)',
-        backgroundImage: 'linear-gradient(90deg, rgba(2,0,36,1) 28%, rgba(9,9,121,1) 63%, rgba(0,212,255,0) 100%)'
+        backgroundImage: 'linear-gradient(90deg, rgba(2, 0, 36, 1) 28%, rgb(11 11 67) 63%, rgba(0, 212, 255, 0) 100%)'
       }}
     >
       <div className={`flex justify-center h-full`}>
@@ -79,7 +80,27 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-95 z-10">
             {title}
           </div>
-
+        {/* {id === 2 && (
+          <div>
+            <GlobeComponent/>
+          </div>
+        )} */}
+        {id == 3 && (
+          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-[5rem] lg:-right-15">
+            <div className="flex flex-col gap-3 lg:gap-8">
+              {["React.JS", "Next.JS", "TypeScript"].map((item, idx) => (
+                <span key={idx} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">{item}</span>
+              ))}
+              <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
+            </div>
+            <div className="flex flex-col gap-3 lg:gap-8">
+              {["Node.JS", "Adonis", "Nest.JS", "Laravel"].map((item, idx) => (
+                <span key={idx} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">{item}</span>
+              ))}
+              <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
+            </div>
+          </div>
+        )}
         </div>
       </div>
     </div>
